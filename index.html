@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Projeto Traveller</title>
+</head>
+
+<body>
+
+    <!--início Header-->
+    <section class="menu_home">
+        <h2> <a href="./index.html"><i class="fas fa-plane"></i> Traveller</a> </h2>
+    </section>
+    <!--fim Header-->
+
+    <div class="container_all">
+
+        <!-- inicio img hero e campo de busca-->
+        <header class="header_home">
+
+            <!--início classe busca desktop-->
+            <section class="campo_busca">
+                <input type="search" name="busca" placeholder="  Digite aqui o que você busca em São Paulo" id="busca">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </section>
+            <!--fim classe busca desktop-->
+
+            <!--início classe button option mobile //colocar no @media e estilizar-->
+            <a href="#idhoteis" class="button_hotel"> <i id="icone" class="fas fa-hotel"> </i> Hoteis</a>
+            <a href="#idlocadoras" class="button_aluguel"> <i id="icone" class="fas fa-car"> </i> Aluguel</a>
+            <!--fim classe button option mobile-->
+
+
+        </header>
+        <!-- fim da header img hero e campo de busca-->
+
+        <!-- inicio conteúdo principal da home -->
+        <main class="conteudo_home">
+
+            <!--início container texto e imagens, serve para alinhar margem-->
+            <div class="container_articles">
+
+                <!-- inicio article "conheça são paulo" -->
+                <article class="sobre_sp">
+                    <h1>Conheça São Paulo</h1>
+                    <p>
+                        Uma cidade vanguardista e inovadora, que preserva na arquitetura, nas artes e na gastronomia um
+                        passado
+                        composto pela união de mais de 70 nacionalidades. E, ao mesmo tempo em que preserva tradições,
+                        não se
+                        deixa ultrapassar. Antenada é a palavra certa para descrevê-la. Para conhecê-la melhor é preciso
+                        apenas
+                        duas coisas: mente aberta e disposição para mergulhar de cabeça nessa cidade que nunca dorme.
+                    </p>
+                    <div class="sp_imagens">
+                        <img src="./images/masp.png" alt="Imagem diagonal do MASP, o museu possui paredes e vigas em vermelho e há prédios ao fundo. Na rua há reflexos de carros em alta velocidade" class="thumbnail-sp">
+                        <img src="./images/beco.png" alt="Imagem do Beco do Batman contendo muros coloridos e rua ladrilhada." class="thumbnail-sp">
+                        <img src="./images/theatro (1).png" alt="Imagem frontal do Theatro Municipal de São Paulo, possui arquitetura antiga e cores em tons de amarelo e marrom"
+                            class="thumbnail-sp">
+                        <img src="./images/ibira.png" alt="Imagem do Parque Ibirapuera, paisagem a luz do dia com céu azul, árvores, grama e um lago. Possui prédios ao fundo" class="thumbnail-sp">
+                    </div>
+                </article>
+                <!-- fim article "conheça são paulo" -->
+
+                <!-- inicio article hotéis  -->
+                <article id="idhoteis" class="hoteis">
+                    <h1>Se hospede em São Paulo</h1>
+                    <div class="hoteis_opcoes">
+                        <a href="sheraton.html"> <img src="./images/Sheraton São Paulo WTC Hotel.png"
+                                class="thumbnail-hotel" alt="Imagem frontal do Sheraton São Paulo WTC Hotel. Há dois prédios modernos com cores em tons terrosos e vidraçaria verde. É possível ver mais prédios e um rio ao fundo."
+                                title="Conheça o hotel Sheraton São Paulo WTC"></a>
+                        <a href="renaissance.html"> <img src="./images/Renaissance São Paulo Hotel.png"
+                                class="thumbnail-hotel" alt="Imagem do Renaissance São Paulo Hotel. Há dois prédios modernos com listras nas cores vermelho e cinza. É possível ver mais prédios ao fundo."
+                                title="Conheça o hotel Renaissance São Paulo"></a>
+                        <a href="bourbon.html"> <img src="./images/Bourbon Convention Ibirapuera .png"
+                                class="thumbnail-hotel" alt="Imagem do Hotel Bourbon Convention. Há dois prédios modernos na cor bege possuindo uma vidraçaria verde e a logo do hotel na cor verde na lateral de um dos prédios."
+                                title="Conheça o hotel Bourbon Convention"></a>
+                        <a href="bluetreemorumbi.html"> <img src="./images/blue tree premium morumbi (1).png"
+                                class="thumbnail-hotel" alt="Imagem do Hotel Blue Tree Premium Morumbi. Há um prédio moderno com a cor predominante branca. É possível ver mais prédios e uma avenida movimentada ao fundo."
+                                title="Conheça o hotel Blue Tree Premium Morumbi"></a>
+                        <a href="goldentulip.html"> <img src="./images/Golden Tulip Paulista Plaza.png"
+                                class="thumbnail-hotel" alt="Imagem do Hotel Golden Tulip Paulista Plaza. Há um prédio moderno com a cor predominante branca. É possível ver apenas o céu azul ao fundo."
+                                title="Conheça o hotel Golden Tulip Paulista Plaza"> </a>
+                        <a href="comfortibirapuera.html"> <img src="./images/comfort ibirapuera.png"
+                                class="thumbnail-hotel" alt="Imagem do Hotel Comfort Ibirapuera. Nela se encontra a fachada e placas do hotel, que tem as cores bege, branco e cinza."
+                                title="Conheça o hotel Comfort Ibirapuera"></a>
+                        <a href="ibisstyle.html"> <img src="./images/ibis styles são paulo anhembi.png"
+                                class="thumbnail-hotel" alt="Imagem do Hotel Ibis Styles São Paulo Anhembi. Nela se encontra a fachada do hotel com as cores do logo em verde e do hotel em cinza."
+                                title="Conheça o hotel Ibis Styles São Paulo Anhembi"></a>
+                        <a href="mercuresaopaulopamplona.html"> <img src="./images/Mercure São Paulo Pamplona.png"
+                                class="thumbnail-hotel" alt="Imagem do Hotel Mercure São Paulo Pamplona. Nela se encontra a fachada do hotel com cores em tons terrosos."
+                                title="Conheça o hotel Mercure São Paulo Pamplona"></a>
+                    </div>
+                </article>
+                <!-- fim article hotéis -->
+
+                <!-- inicio article aluguel de carros -->
+                <article id="idlocadoras" class="aluguel_carros">
+                    <h1>Alugue carros em São Paulo</h1>
+                    <div class="aluguel_opcoes">
+                        <a href="localiza.html"> <img src="./images/localiza.png" class="thumbnail-aluguel"
+                                alt="Nesta imagem consta o logo da locadora de veiculos Localiza na cor verde com a escrita Localiza na cor branca e a palavra Hertz em Amarelo" title="Conheça a locadora de veiculos Localiza"></a>
+                        <a href="movida.html"> <img src="./images/movida.png" class="thumbnail-aluguel"
+                                alt="Nesta imagem consta o logo da locadora de veiculos Movida na cor laranja com portas de vidro para a entrada" title="Conheça a locadora de veiculos Movida"></a>
+                        <a href="alcar.html"> <img src="./images/alcar.png" class="thumbnail-aluguel"
+                                alt="Nesta imagem existe a locadora com as paredes na cor bege e uma porta de vidro com o logo da Alcar Locadora"" title="Conheça a locadora de veiculos Alcar"></a>
+                        <a href="avis.html"> <img src="./images/avis.png" class="thumbnail-aluguel"
+                                alt="Nesta imagem consta o logo da Avis locadora de veiculos com a escrita na cor branca com fundo na cor vermelha e a área de recepção abaixo" title="Conheça a locadora de veiculos Avis"></a>
+                    </div>
+                </article>
+                <!-- fim article aluguel de carros -->
+
+            </div>
+            <!--fim container texto e imagens, serve para alinhar margem-->
+
+
+        </main>
+        <!-- fim conteúdo principal da home -->
+    </div>
+    <!--fim do container all -->
+
+</body>
+
+</html>

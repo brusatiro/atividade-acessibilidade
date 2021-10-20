@@ -1,0 +1,838 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.menu_home {
+    background-color: #3D405B;
+    text-transform: uppercase;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1rem;
+    padding: 15px 0px;
+    box-sizing: border-box;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.menu_home h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    letter-spacing: 5px;
+    display: flex;
+    font-size: 1em;
+}
+
+.menu_home a {
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+}
+
+.header_home {
+    background-image: url(/images/desktop_header.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    width: 100%;
+    height: 800px;
+}
+
+.container_all {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+
+
+.campo_busca {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid #3D405B;
+    border-radius: 50px;
+    background-color: #fff;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.campo_busca input {
+    border: none;
+    height: 30px;
+    width: 90%;
+    padding: 0px 20px;
+    border-radius: 50px;
+    outline: none;
+    font-family: 'Open sans';
+    font-weight: 300;
+    font-size: 1.09rem;
+}
+
+.campo_busca button {
+    color: #455979;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    background: none;
+    width: 10%;
+}
+
+
+
+.conteudo_home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.container_articles {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.sobre_sp, 
+.hoteis, 
+.aluguel_carros {
+    padding-top: 50px;
+    text-align: left;
+    height: 100%;
+}
+
+.sobre_sp h1,
+.hoteis h1,
+.aluguel_carros h1 {
+    padding-bottom: 30px;
+    margin: 0 10px;
+    text-transform: uppercase;
+    color: #3D405B;
+}
+
+.sobre_sp p {
+    margin: 10px;
+}
+
+.hoteis_opcoes,
+.aluguel_opcoes,
+.sp_imagens {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.thumbnail-sp {
+    width: 305px;
+    height: 305px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.thumbnail-hotel {
+    width: 305px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.thumbnail-aluguel {
+    width: 305px;
+    height: 400px;
+    border-radius: 10px;
+    margin: 0px 10px;
+}
+
+/* @media home */
+
+@media screen and (max-width:700px) {
+    .header_home {
+        background-image: url(/images/mobile-header.png);
+    }
+
+    .campo_busca{
+      visibility: hidden;  
+    }
+    
+.button_hotel{
+    width: 40vw;
+    height: 16vh;
+    margin-top: 12vh;
+    margin-left:7.2vw;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    align-content: center auto;
+    background-color: #E07A5F;
+    border-radius: 5%;
+    margin-right: 1vw;
+    text-align: center auto;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding: 7.5vw;
+    box-sizing: border-box;
+    display:flex;
+    float:left;
+}
+
+#icone{
+    font-size: 2.5rem;
+    margin-right: 5px;
+}
+
+.button_aluguel{
+    width: 40vw;
+    height: 16vh;
+    margin-top: 12vh;
+    margin-right: 7.2vw;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    align-content: center auto;
+    background-color: #81B29A;
+    border-radius: 5%;
+    text-align: center auto;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding: 10vw;
+    box-sizing: border-box;
+    display:flex;
+    float:right;
+}
+
+    .hoteis_opcoes{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: normal;
+        padding-left: 10px;
+        height: 200px;
+    }
+
+    .thumbnail-hotel{
+        max-width: 300px;
+    }
+
+    .aluguel_opcoes{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: normal;
+        padding-left: 10px;
+        height: 350px;
+    }
+
+    .sp_imagens {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: normal;
+        padding-left: 10px;
+        height: 350px;
+    }
+
+    .thumbnail-aluguel, 
+    .thumbnail-sp {
+        max-width: 300px;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+    .campo_busca{
+      visibility: hidden;  
+    }
+    
+.button_hotel{
+    width: 30vw;
+    height: 16vh;
+    margin-top: 15vh;
+    margin-left:15vw;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;   
+    align-content: center auto;
+    background-color: #E07A5F;
+    border-radius: 5%;
+    margin-right: 1vw;
+    text-align: center auto;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 5.5vw;
+    box-sizing: border-box;
+    display:flex;
+    float:left;
+}
+
+#icone{
+    font-size: 2rem;
+}
+
+.button_aluguel{
+    width: 30vw;
+    height: 16vh;
+    margin-top: 15vh;
+    margin-right: 15vw;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    align-content: center auto;
+    background-color: #81B29A;
+    border-radius: 5%;
+    text-align: center auto;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 5.5vw;
+    box-sizing: border-box;
+    display:flex;
+    float:right;
+}
+}
+
+
+@media screen and (max-width:480px) {
+
+    .campo_busca{
+      visibility: hidden;  
+    }
+    
+.button_hotel{
+    width: 33vw;
+    height: 14vh;
+    margin-top: 15vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    align-content: center auto;
+    background-color: #E07A5F;
+    border-radius: 5%;
+    text-align: center auto;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 3.5vw;
+    box-sizing: border-box;
+    float:left;
+}
+
+#icone{
+    font-size: 1.6rem;
+}
+
+.button_aluguel{
+    width: 33vw;
+    height: 14vh;
+    margin-top: 15vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    align-content: center auto;
+    background-color: #81B29A;
+    border-radius: 5%;
+    text-align: center auto;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 3.5vw;
+    box-sizing: border-box;
+    float:right;
+}
+}
+
+/* pagina individual dos hotéis */
+
+.header_hotel, 
+.header_aluguel {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    box-sizing: border-box;
+}
+
+.header_hotel,
+.rodape_hotel,
+.header_aluguel,
+.rodape_aluguel {
+    background-color: #3D405B;
+}
+
+.pagina_hotel {
+    font-family: 'Open Sans', sans-serif;
+    color: #3D405B;
+    background-color: #F4F1DE;
+    min-height: 100vh;
+}
+
+.titulo_hotel {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    padding: 50px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hotel_sobre {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hotel_secao1 {
+    color: #3D405B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    background-color: #F2CC8F;
+    border-radius: 15px;
+    border: 1px solid #F2CC8F;
+    box-shadow: 1px 1px 2px #F2CC8F;
+    margin-right: 20px;
+    padding: 20px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.imagem_principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    height: 60%;
+}
+
+.imagem_principal img {
+    height: 100%;
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #3D405B;
+}
+
+.hotel_info, 
+.locadora_info {
+    height: 40%;
+    min-height: 200px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 500;
+}
+
+.hotel_info li,
+.locadora_info li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.hotel_info i,
+.locadora_info i {
+    color: #3D405B;
+    margin-right: 5px;
+    font-size: 0.9rem;
+}
+
+.site_hotel,
+.site_locadora {
+    color: #3D405B;
+    text-decoration: none;
+}
+
+.site_hotel:hover,
+.site_locadora:hover {
+    text-decoration: underline;
+}
+
+.hotel_secao2 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 20px;
+}
+
+.hotel_descricao {
+    height: 60%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    line-height: 20px;
+
+}
+
+.hotel_atracoes {
+    padding-left: 20px;
+    height: 40%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.hotel_atracoes h3 {
+    margin-bottom: 5px;
+}
+
+.galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+}
+
+.galeria_imagens {
+    background-color: #F2CC8F;
+    border-radius: 15px;
+    border: 1px solid #F2CC8F;
+    box-shadow: 1px 1px 2px #F2CC8F;
+    margin: 30px;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+}
+
+.img_galeria {
+    margin: 10px;
+    width: 20%;
+    min-width: 150px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px #3D405B;
+}
+
+.mapa_hotel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    margin-top: 40px;
+}
+
+.mapa_hotel h2 {
+    margin-bottom: 30px;
+}
+
+.avaliar_hotel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
+    margin-top: 30px;
+}
+
+.avaliar_hotel h2 {
+    margin-bottom: 25px;
+}
+
+input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 60%;
+    height: 15vh;
+    padding-left: 10px;
+    font-size: 1rem;
+}
+
+.avaliar_hotel button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    width: 120px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #F6FFF8;
+    color: #3D405B;
+    text-transform: uppercase;
+    border-color: #3D405B;
+    font-size: 0.9rem;
+}
+
+.avaliar_hotel button:hover {
+    color: #fff;
+    background-color: #3D405B;
+}
+
+.rodape_hotel,
+.rodape_aluguel {
+    color: #ededed;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;  
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+
+@media(max-width: 1200px) {
+
+    .hotel_secao1 {
+        width: 40%;
+    }
+
+    .hotel_secao2 {
+        width: 40%;
+    }
+
+    .galeria_imagens {
+        width: 80%; 
+    }
+}
+
+@media(max-width: 800px) {
+    .titulo_hotel {
+        font-size: 1.7rem;
+        padding: 40px;
+    }
+
+    .hotel_sobre {
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media(max-width: 700px) {
+    .hotel_sobre {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hotel_secao1 {
+        width: 60%;
+        margin-bottom: 40px;
+    }
+
+    .hotel_secao2 {
+        width: 80%;
+        text-align: center;
+    }
+
+    .hotel_atracoes {
+        list-style-position: inside;
+    }
+}
+
+@media(max-width: 699px) {
+    .hotel_sobre {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.8rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+    .container_articles{
+        max-width: 80%;
+    }
+
+}
+
+/*Pagina individual das locadoras*/
+
+.titulo_locadora {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    padding: 50px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.pagina_locadora {
+    font-family: 'Open Sans', sans-serif;
+    color: #3D405B;
+    background-color: #F4F1DE;
+    min-height: 100vh;
+}
+.locadora_sobre {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.locadora_secao1 {
+    color: #3D405B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    background-color: #F2CC8F;
+    border-radius: 15px;
+    border: 1px solid #F2CC8F;
+    box-shadow: 1px 1px 2px #F2CC8F;
+    margin-right: 20px;
+    padding: 20px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.locadora_secao2 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 20px;
+}
+
+.locadora_descricao {
+    height: 60%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    line-height: 20px;
+
+}
+.mapa_locadora {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
+}
+
+.mapa_locadora h2 {
+    margin-bottom: 30px;
+}
+
+.avaliar_locadora {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
+    margin-top: 30px;
+}
+
+.avaliar_locadora h2 {
+    margin-bottom: 25px;
+}
+
+.avaliar_locadora button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    width: 120px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #F6FFF8;
+    color: #3D405B;
+    text-transform: uppercase;
+    border-color: #3D405B;
+    font-size: 0.9rem;
+}
+
+.avaliar_locadora button:hover {
+    color: #fff;
+    background-color: #3D405B;
+}
+
+
+@media(max-width: 1200px) {
+
+    .locadora_secao1 {
+        width: 40%;
+    }
+
+    .locadora_secao2 {
+        width: 40%;
+    }
+    .mapa_locadora{
+        height: 30vh;
+    }
+
+}
+
+@media(max-width: 800px) {
+    .titulo_locadora {
+        font-size: 1.7rem;
+        padding: 40px;
+    }
+
+    .locadora_sobre {
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media(max-width: 700px) {
+    .locadora_sobre {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .locadora_secao1 {
+        width: 60%;
+        margin-bottom: 40px;
+    }
+
+    .locadora_secao2 {
+        width: 80%;
+        text-align: center;
+    }
+
+}
+
+@media(max-width: 699px) {
+    .locadora_sobre {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.8rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+}
+
